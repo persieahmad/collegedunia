@@ -16,7 +16,7 @@ export function getCurrentWeather(lat: number, lon: number) {
 
 export function getForecast(lat: number, lon: number) {
   return api
-    .get(`/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&cnt=5`)
+    .get(`/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`)
     .then((res) => res.data)
     .catch((err) => err);
 }
